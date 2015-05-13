@@ -45,7 +45,7 @@ public class IntToEngTest {
 				
 		}
 		@Test
-		public void ‚ 1‚O‚©‚ç19‚Ü‚Å(){
+		public void ‚ 10‚©‚ç19‚Ü‚Å(){
 			IntToEng ite= new IntToEng();
 			String expected10="ten";
 			String expected11="eleven";
@@ -81,5 +81,37 @@ public class IntToEngTest {
 			assertEquals(actual17,expected17);
 			assertEquals(actual18,expected18);
 			assertEquals(actual19,expected19);
+		}
+		
+		@Test
+		public void ‚ 2‚O‚©‚ç99‚Ü‚Å(){
+			IntToEng ite= new IntToEng();
+			String expected20="twenty";
+			String expected21="twentyone";
+			String expected22="twentytwo";
+			String expected30="thirty";
+			String expected44="fortyfour";
+			String expected90="ninety";
+			String expected98="ninetyeight";
+			String expected99="ninetynine";
+		
+					
+			String actual20=ite.translateEng(20);
+			String actual21=ite.translateEng(21);
+			String actual22=ite.translateEng(22);
+			String actual30=ite.translateEng(30);
+			String actual44=ite.translateEng(44);
+			String actual90=ite.translateEng(90);
+			String actual98=ite.translateEng(98);
+			String actual99=ite.translateEng(99);
+			
+			assertEquals(actual20,expected20);
+			assertEquals(actual21,expected21);
+			assertEquals(actual22,expected22);
+			assertEquals(actual30,expected30);
+			assertEquals(actual44,expected44);
+			assertEquals(actual90,expected90);
+			assertEquals(actual98,expected98);
+			assertEquals(actual99,expected99);
 		}
 	}
